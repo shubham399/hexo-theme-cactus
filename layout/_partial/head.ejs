@@ -1,4 +1,7 @@
 <head>
+    <% if (is_post() && config.generator_amp){ %>
+  <link rel="amphtml" href="<%= config.url %><%= config.root %><%= page.path %>/amp/index.html">
+  <% } %>
     <!-- so meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

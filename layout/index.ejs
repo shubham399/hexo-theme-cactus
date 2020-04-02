@@ -12,8 +12,7 @@
           <a class="icon" target="_blank" href="<%- url_for(theme.social_links[link]) %>">
             <i class="fas fa-envelope"></i><!--
       ---></a><!--
-      ---><% } if else { %>
-        <% if (link == 'cube') { %>
+      ---><% } else if (link == 'cube') { %>
           <a class="icon" target="_blank" href="<%- url_for(theme.social_links[link]) %>">
             <i class="fas fa-cube"></i><!--
       ---></a><!--
